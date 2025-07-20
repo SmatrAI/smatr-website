@@ -17,38 +17,38 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 27%;
 
-    /* Deep blue from logo */
-    --primary: 219 79% 20%;
+    /* Soft sage green */
+    --primary: 156 39% 54%;
     --primary-foreground: 0 0% 98%;
     
-    /* Lighter blue variant */
-    --primary-light: 219 60% 35%;
+    /* Lighter sage variant */
+    --primary-light: 156 25% 70%;
     
-    /* Tech blue accent */
-    --secondary: 219 15% 95%;
-    --secondary-foreground: 219 79% 20%;
+    /* Warm cream accent */
+    --secondary: 45 25% 95%;
+    --secondary-foreground: 156 39% 54%;
 
-    --muted: 219 15% 95%;
-    --muted-foreground: 215 25% 45%;
+    --muted: 45 15% 93%;
+    --muted-foreground: 156 15% 45%;
 
-    --accent: 219 30% 88%;
-    --accent-foreground: 219 79% 20%;
+    --accent: 156 20% 88%;
+    --accent-foreground: 156 39% 54%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 219 15% 88%;
-    --input: 219 15% 88%;
-    --ring: 219 79% 20%;
+    --border: 156 10% 88%;
+    --input: 156 10% 88%;
+    --ring: 156 39% 54%;
 
     /* Gradient definitions */
-    --gradient-primary: linear-gradient(135deg, hsl(219, 79%, 20%), hsl(219, 60%, 35%));
-    --gradient-accent: linear-gradient(135deg, hsl(285, 85%, 60%), hsl(252, 85%, 65%));
-    --gradient-hero: linear-gradient(135deg, hsl(219, 79%, 20%) 0%, hsl(219, 60%, 35%) 50%, hsl(285, 85%, 60%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(156, 39%, 54%), hsl(156, 25%, 70%));
+    --gradient-accent: linear-gradient(135deg, hsl(45, 60%, 85%), hsl(156, 30%, 85%));
+    --gradient-hero: linear-gradient(135deg, hsl(156, 39%, 54%) 0%, hsl(156, 25%, 70%) 50%, hsl(45, 60%, 85%) 100%);
     
     /* Shadows */
-    --shadow-tech: 0 10px 30px -10px hsl(219, 79%, 20% / 0.3);
-    --shadow-glow: 0 0 40px hsl(219, 60%, 35% / 0.2);
+    --shadow-tech: 0 10px 30px -10px hsl(156, 39%, 54% / 0.2);
+    --shadow-glow: 0 0 40px hsl(156, 25%, 70% / 0.15);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
