@@ -1,11 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download, Play } from "lucide-react";
+import heroImage from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-accent/10" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Hero background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroImage})` }}
+      />
+      <div className="absolute inset-0 bg-gradient-hero/80" />
       <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }} />
       
@@ -13,20 +18,18 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Logo */}
           <div className="mb-8 animate-fade-in">
-            <img 
-              src="/lovable-uploads/3ba6212c-a865-420b-8879-8a440b1ccac9.png" 
-              alt="Smatr Logo" 
-              className="h-16 mx-auto mb-6"
-            />
+            <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-6">
+              Smatr
+            </h1>
           </div>
 
           {/* Main heading */}
-          <h1 className="text-5xl md:text-7xl font-display font-bold text-primary-foreground mb-6 animate-slide-up">
+          <h2 className="text-4xl md:text-6xl font-display font-bold text-primary-foreground mb-6 animate-slide-up">
             Your Smart
             <span className="block bg-gradient-accent bg-clip-text text-transparent">
               Digital Companion
             </span>
-          </h1>
+          </h2>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-primary-foreground/80 mb-8 animate-slide-up max-w-3xl mx-auto" style={{ animationDelay: '0.2s' }}>
