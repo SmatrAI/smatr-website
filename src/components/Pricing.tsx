@@ -26,10 +26,10 @@ const Pricing = () => {
     <section className="py-24 bg-gradient-subtle">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
+          <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
             Choose Your Plan
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Start free and upgrade when you need more power for your productivity
           </p>
         </div>
@@ -38,8 +38,8 @@ const Pricing = () => {
           {/* Free Plan */}
           <Card className="border-2 border-border hover:border-primary/20 transition-all duration-300 hover:shadow-elegant">
             <CardHeader className="text-center pb-8">
-              <CardTitle className="text-2xl font-display mb-2">Free</CardTitle>
-              <CardDescription className="text-lg">Perfect for getting started</CardDescription>
+              <CardTitle className="text-xl font-display mb-2">Free</CardTitle>
+              <CardDescription className="text-base">Perfect for getting started</CardDescription>
               <div className="mt-6">
                 <span className="text-4xl font-bold text-foreground">$0</span>
                 <span className="text-muted-foreground">/month</span>
@@ -67,11 +67,11 @@ const Pricing = () => {
               Most Popular
             </div>
             <CardHeader className="text-center pb-8">
-              <CardTitle className="text-2xl font-display mb-2 flex items-center justify-center gap-2">
-                <Star className="w-6 h-6 text-primary" />
+              <CardTitle className="text-xl font-display mb-2 flex items-center justify-center gap-2">
+                <Star className="w-5 h-5 text-primary" />
                 Pro
               </CardTitle>
-              <CardDescription className="text-lg">For power users and professionals</CardDescription>
+              <CardDescription className="text-base">For power users and professionals</CardDescription>
               <div className="mt-6">
                 <span className="text-4xl font-bold text-foreground">$15</span>
                 <span className="text-muted-foreground">/month</span>

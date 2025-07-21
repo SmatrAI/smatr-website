@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Main heading */}
-          <h1 className="text-5xl md:text-7xl font-display font-bold text-primary-foreground mb-8 animate-slide-up">
+          <h1 className="text-3xl md:text-5xl font-display font-bold text-primary-foreground mb-6 animate-slide-up">
             Transform Your
             <span className="block bg-gradient-accent bg-clip-text text-transparent">
               Browsing Experience
@@ -20,21 +20,25 @@ const Hero = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-primary-foreground/80 mb-12 animate-slide-up max-w-4xl mx-auto leading-relaxed" style={{ animationDelay: '0.2s' }}>
+          <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 animate-slide-up max-w-3xl mx-auto leading-relaxed" style={{ animationDelay: '0.2s' }}>
             Supercharge your productivity with intelligent tools, seamless workflow integration, 
             and advanced features designed for modern professionals and power users.
           </p>
 
           {/* CTA buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: '0.4s' }}>
-            <Button variant="hero" size="default" className="px-6 py-3">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up mb-8" style={{ animationDelay: '0.4s' }}>
+            <Button variant="hero" size="sm" className="px-4 py-2">
               <Download className="w-4 h-4" />
               Download Chrome Extension
             </Button>
-            <Button variant="outline" size="default" className="px-6 py-3 bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/20">
-              <Play className="w-4 h-4" />
-              Watch Demo
+            <Button variant="outline" size="sm" className="px-4 py-2 bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/20">
+              Join Waitlist
             </Button>
+          </div>
+
+          {/* Join Waitlist Form */}
+          <div className="max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '0.6s' }}>
+            <div id="zf_div_CKuC-PeS9hmKqy4L46nrWuURa286Ie3Bik1W0YKiJXg"></div>
           </div>
 
           {/* Scroll indicator */}

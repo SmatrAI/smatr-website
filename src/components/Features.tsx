@@ -45,11 +45,11 @@ const Features = () => {
     <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
+          <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
             Powerful Features for
             <span className="block text-primary">Smarter Browsing</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Discover how Smatr transforms your digital experience with cutting-edge AI technology and intuitive design.
           </p>
         </div>
@@ -65,7 +65,7 @@ const Features = () => {
                   <feature.icon className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div className="flex items-center gap-2 mb-2">
-                  <CardTitle className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
+                  <CardTitle className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
                     {feature.title}
                   </CardTitle>
                   {feature.highlight === "Premium Feature" && (

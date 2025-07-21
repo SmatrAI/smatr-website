@@ -45,11 +45,11 @@ const Pillars = () => {
     <section className="py-24 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
+          <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
             Built on Three
             <span className="block text-primary">Core Pillars</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Our commitment to creating a digital companion that respects your needs, protects your privacy, and puts you in complete control.
           </p>
         </div>
@@ -67,7 +67,7 @@ const Pillars = () => {
                 <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${pillar.gradient} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                   <pillar.icon className="w-8 h-8 text-white" />
                 </div>
-                <CardTitle className="text-2xl font-display font-bold text-foreground group-hover:text-primary transition-colors">
+                <CardTitle className="text-xl font-display font-bold text-foreground group-hover:text-primary transition-colors">
                   {pillar.title}
                 </CardTitle>
               </CardHeader>
