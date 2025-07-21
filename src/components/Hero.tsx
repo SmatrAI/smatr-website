@@ -11,25 +11,18 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Logo */}
-          <div className="mb-8 animate-fade-in">
-            <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-6">
-              Smatr
-            </h1>
-          </div>
-
           {/* Main heading */}
-          <h2 className="text-4xl md:text-6xl font-display font-bold text-primary-foreground mb-6 animate-slide-up">
-            Your Smart
+          <h1 className="text-5xl md:text-7xl font-display font-bold text-primary-foreground mb-8 animate-slide-up">
+            Transform Your
             <span className="block bg-gradient-accent bg-clip-text text-transparent">
-              Digital Companion
+              Browsing Experience
             </span>
-          </h2>
+          </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-primary-foreground/80 mb-8 animate-slide-up max-w-3xl mx-auto" style={{ animationDelay: '0.2s' }}>
-            Experience the future of browsing with AI-powered personalization, 
-            uncompromising privacy, and complete control over your digital journey.
+          <p className="text-xl md:text-2xl text-primary-foreground/80 mb-12 animate-slide-up max-w-4xl mx-auto leading-relaxed" style={{ animationDelay: '0.2s' }}>
+            Supercharge your productivity with intelligent tools, seamless workflow integration, 
+            and advanced features designed for modern professionals and power users.
           </p>
 
           {/* CTA buttons */}
