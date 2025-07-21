@@ -31,14 +31,25 @@ const Hero = () => {
               <Download className="w-4 h-4" />
               Download Chrome Extension
             </Button>
-            <Button variant="outline" size="sm" className="px-4 py-2 bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/20">
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="px-4 py-2 bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/20"
+              onClick={() => {
+                const formElement = document.getElementById('zf_div_CKuC-PeS9hmKqy4L46nrWuURa286Ie3Bik1W0YKiJXg');
+                if (formElement) {
+                  formElement.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
               Join Waitlist
             </Button>
           </div>
 
           {/* Join Waitlist Form */}
-          <div className="max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '0.6s' }}>
-            <div id="zf_div_CKuC-PeS9hmKqy4L46nrWuURa286Ie3Bik1W0YKiJXg"></div>
+          <div className="max-w-2xl mx-auto animate-slide-up bg-background/10 backdrop-blur-sm rounded-lg p-6 border border-primary-foreground/20" style={{ animationDelay: '0.6s' }}>
+            <h3 className="text-lg font-semibold text-primary-foreground mb-4 text-center">Join Our Waitlist</h3>
+            <div id="zf_div_CKuC-PeS9hmKqy4L46nrWuURa286Ie3Bik1W0YKiJXg" className="min-h-[400px]"></div>
           </div>
 
           {/* Scroll indicator */}
