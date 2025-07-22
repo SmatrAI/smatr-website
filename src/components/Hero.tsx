@@ -17,7 +17,7 @@ const Hero = () => {
           {/* Main heading */}
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-bold text-primary-foreground mb-6 animate-slide-up text-glow">
             Transform Your
-            <span className="block bg-gradient-accent bg-clip-text text-transparent animate-shimmer hover-scale">
+            <span className="block bg-gradient-to-r from-[hsl(25,95%,60%)] via-[hsl(280,85%,60%)] to-[hsl(240,85%,65%)] bg-clip-text text-transparent animate-shimmer hover-scale font-extrabold">
               Browsing Experience
             </span>
           </h1>
