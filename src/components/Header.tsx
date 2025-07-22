@@ -19,7 +19,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <img 
-              src="/lovable-uploads/3ba6212c-a865-420b-8879-8a440b1ccac9.png" 
+              src="/svg/smatr-logo.svg" 
               alt="Smatr" 
               className="h-8"
             />
