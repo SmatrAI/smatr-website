@@ -15,9 +15,9 @@ const Hero = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Main heading */}
-          <h1 className="text-3xl md:text-5xl font-display font-bold text-primary-foreground mb-6 animate-slide-up">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-bold text-primary-foreground mb-6 animate-slide-up text-glow">
             Transform Your
-            <span className="block bg-gradient-accent bg-clip-text text-transparent">
+            <span className="block bg-gradient-accent bg-clip-text text-transparent animate-shimmer hover-scale">
               Browsing Experience
             </span>
           </h1>
@@ -30,7 +30,7 @@ const Hero = () => {
 
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up mb-8" style={{ animationDelay: '0.4s' }}>
-            <Button variant="hero" size="sm" className="px-4 py-2">
+            <Button variant="hero" size="sm" className="px-4 py-2 hover-scale animate-glow-pulse">
               <Download className="w-4 h-4" />
               Download Chrome Extension
             </Button>
@@ -40,9 +40,9 @@ const Hero = () => {
                 <Button 
                   variant="outline" 
                   size="sm" 
-                  className="px-4 py-2 bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/20"
+                  className="px-4 py-2 bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/20 hover-scale"
                 >
-                  Join Waitlist
+                  Join Waitlist for Early Access
                 </Button>
               </DialogTrigger>
               <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
@@ -60,13 +60,20 @@ const Hero = () => {
             </Dialog>
           </div>
 
-          {/* Alternative: Inline Form Section */}
-          <div className="max-w-2xl mx-auto animate-slide-up bg-background/10 backdrop-blur-sm rounded-lg p-6 border border-primary-foreground/20" style={{ animationDelay: '0.6s' }}>
-            <h3 className="text-lg font-semibold text-primary-foreground mb-4 text-center">Get Early Access</h3>
-            <div className="text-center text-primary-foreground/70 mb-4">
-              <p className="text-sm">Join our waitlist to be the first to experience Smatr when it launches</p>
+          {/* Enhanced Stats or Features */}
+          <div className="flex flex-wrap justify-center gap-6 md:gap-8 animate-slide-up" style={{ animationDelay: '0.6s' }}>
+            <div className="text-center group hover-scale">
+              <div className="text-2xl md:text-3xl font-bold text-primary-foreground mb-1 animate-pulse">10K+</div>
+              <div className="text-sm text-primary-foreground/70">Early Adopters</div>
             </div>
-            <div id="zf_div_CKuC-PeS9hmKqy4L46nrWuURa286Ie3Bik1W0YKiJXg" className="min-h-[400px]"></div>
+            <div className="text-center group hover-scale">
+              <div className="text-2xl md:text-3xl font-bold text-primary-foreground mb-1 animate-pulse" style={{ animationDelay: '0.2s' }}>99%</div>
+              <div className="text-sm text-primary-foreground/70">Satisfaction Rate</div>
+            </div>
+            <div className="text-center group hover-scale">
+              <div className="text-2xl md:text-3xl font-bold text-primary-foreground mb-1 animate-pulse" style={{ animationDelay: '0.4s' }}>50+</div>
+              <div className="text-sm text-primary-foreground/70">Features</div>
+            </div>
           </div>
 
           {/* Scroll indicator */}
