@@ -82,7 +82,7 @@ jobs:
       - name: Deploy to S3
         run: |
           echo "🚀 Deploying to S3 bucket: ${{ vars.CLIENT_S3_BUCKET }}"
-          aws s3 sync dist/ s3://${{ vars.CLIENT_S3_BUCKET }} --exact-timestamps
+          aws s3 sync dist/ s3://${{ vars.CLIENT_S3_BUCKET }} --delete
           echo "✅ S3 deployment completed"
 
       - name: Invalidate CloudFront distribution
