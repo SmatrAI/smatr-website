@@ -1,18 +1,18 @@
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Features from "@/components/Features";
-import Pillars from "@/components/Pillars";
-import Pricing from "@/components/Pricing";
+import HeroSection from "@/components/HeroSection";
+import WhatSmatrDoes from "@/components/WhatSmatrDoes";
+import FeaturesSection from "@/components/FeaturesSection";
+import WhySmatrSection from "@/components/WhySmatrSection";
+import WishlistSection from "@/components/WishlistSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen font-sans">
-      <Header />
-      <Hero />
-      <Pillars />
-      <Features />
-      <Pricing />
+    <div className="min-h-screen bg-background">
+      <HeroSection />
+      <WhatSmatrDoes />
+      <FeaturesSection />
+      <WhySmatrSection />
+      <WishlistSection />
       <Footer />
     </div>
   );

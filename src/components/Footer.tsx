@@ -1,175 +1,82 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Github, Twitter, Linkedin, Mail, ArrowRight } from "lucide-react";
+import { Mail, Twitter, Linkedin, Github } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground">
-      {/* Newsletter section */}
-      <div className="border-b border-primary-foreground/10">
-        <div className="container mx-auto px-6 py-16">
-          <div className="max-w-2xl mx-auto text-center">
-            <h3 className="text-3xl font-display font-bold mb-4">
-              Stay Updated
-            </h3>
-            <p className="text-primary-foreground/80 mb-8">
-              Be the first to know about new features, updates, and early access opportunities.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/60"
-              />
-              <Button variant="secondary" className="flex-shrink-0">
-                <ArrowRight className="w-4 h-4" />
-                Subscribe
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Main footer content */}
-      <div className="container mx-auto px-6 py-12">
+    <footer className="bg-smatr-slate/10 border-t border-gray-200">
+      <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <img 
-                src="/lovable-uploads/3ba6212c-a865-420b-8879-8a440b1ccac9.png" 
-                alt="Smatr" 
-                className="h-8"
-              />
-            </div>
-            <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              Your intelligent digital companion for a smarter, more private, and controlled browsing experience.
+          <div className="md:col-span-2">
+            <h3 className="text-2xl font-urbanist font-bold text-primary mb-4">
+              Smatr
+            </h3>
+            <p className="text-muted font-inter leading-relaxed max-w-md mb-6">
+              Your smart web companion for automating tasks, drafting content, and streamlining digital work across websites.
             </p>
-            <div className="flex items-center gap-4">
-              <a
-                href="#"
-                className="text-primary-foreground/60 hover:text-primary-foreground transition-colors"
+            <div className="flex space-x-4">
+              <a 
+                href="mailto:hello@smatr.ai" 
+                className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center text-muted hover:text-primary hover:border-primary transition-all duration-300 hover:scale-110"
+                aria-label="Email"
               >
-                <Twitter className="w-5 h-5" />
+                <Mail className="w-4 h-4" />
               </a>
-              <a
-                href="#"
-                className="text-primary-foreground/60 hover:text-primary-foreground transition-colors"
+              <a 
+                href="#" 
+                className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center text-muted hover:text-primary hover:border-primary transition-all duration-300 hover:scale-110"
+                aria-label="Twitter"
               >
-                <Github className="w-5 h-5" />
+                <Twitter className="w-4 h-4" />
               </a>
-              <a
-                href="#"
-                className="text-primary-foreground/60 hover:text-primary-foreground transition-colors"
+              <a 
+                href="#" 
+                className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center text-muted hover:text-primary hover:border-primary transition-all duration-300 hover:scale-110"
+                aria-label="LinkedIn"
               >
-                <Linkedin className="w-5 h-5" />
+                <Linkedin className="w-4 h-4" />
               </a>
-              <a
-                href="#"
-                className="text-primary-foreground/60 hover:text-primary-foreground transition-colors"
+              <a 
+                href="#" 
+                className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center text-muted hover:text-primary hover:border-primary transition-all duration-300 hover:scale-110"
+                aria-label="GitHub"
               >
-                <Mail className="w-5 h-5" />
+                <Github className="w-4 h-4" />
               </a>
             </div>
           </div>
 
           {/* Product */}
           <div>
-            <h4 className="font-semibold text-primary-foreground mb-4">Product</h4>
-            <ul className="space-y-3 text-sm">
-              <li>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Features
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Chrome Extension
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Premium Features
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Roadmap
-                </a>
-              </li>
+            <h4 className="font-urbanist font-semibold text-foreground mb-4">Product</h4>
+            <ul className="space-y-3 font-inter">
+              <li><a href="#features" className="text-muted hover:text-primary transition-colors">Features</a></li>
+              <li><a href="#demo" className="text-muted hover:text-primary transition-colors">Demo</a></li>
+              <li><a href="#pricing" className="text-muted hover:text-primary transition-colors">Pricing</a></li>
+              <li><a href="#roadmap" className="text-muted hover:text-primary transition-colors">Roadmap</a></li>
             </ul>
           </div>
 
           {/* Company */}
           <div>
-            <h4 className="font-semibold text-primary-foreground mb-4">Company</h4>
-            <ul className="space-y-3 text-sm">
-              <li>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Support */}
-          <div>
-            <h4 className="font-semibold text-primary-foreground mb-4">Support</h4>
-            <ul className="space-y-3 text-sm">
-              <li>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Terms of Service
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Documentation
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Help Center
-                </a>
-              </li>
+            <h4 className="font-urbanist font-semibold text-foreground mb-4">Company</h4>
+            <ul className="space-y-3 font-inter">
+              <li><a href="#about" className="text-muted hover:text-primary transition-colors">About</a></li>
+              <li><a href="#blog" className="text-muted hover:text-primary transition-colors">Blog</a></li>
+              <li><a href="#careers" className="text-muted hover:text-primary transition-colors">Careers</a></li>
+              <li><a href="#contact" className="text-muted hover:text-primary transition-colors">Contact</a></li>
             </ul>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-primary-foreground/10 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-primary-foreground/60 text-sm">
+        <div className="border-t border-gray-200 pt-8 mt-12 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="text-sm text-muted font-inter">
             © 2024 Smatr. All rights reserved.
-          </p>
-          <div className="flex items-center gap-6 text-sm">
-            <a href="#" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
-              Privacy
-            </a>
-            <a href="#" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
-              Terms
-            </a>
-            <a href="#" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
-              Cookies
-            </a>
+          </div>
+          <div className="flex space-x-6 text-sm font-inter">
+            <a href="#privacy" className="text-muted hover:text-primary transition-colors">Privacy Policy</a>
+            <a href="#terms" className="text-muted hover:text-primary transition-colors">Terms of Service</a>
+            <a href="#cookies" className="text-muted hover:text-primary transition-colors">Cookie Policy</a>
           </div>
         </div>
       </div>
