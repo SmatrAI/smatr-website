@@ -74,7 +74,7 @@ const Footer = () => {
             © 2024 Smatr. All rights reserved.
           </div>
           <div className="flex space-x-6 text-sm font-inter">
-            <a href="#privacy" className="text-muted hover:text-primary transition-colors">Privacy Policy</a>
+            <a href="/privacy" className="text-muted hover:text-primary transition-colors">Privacy Policy</a>
             <a href="#terms" className="text-muted hover:text-primary transition-colors">Terms of Service</a>
             <a href="#cookies" className="text-muted hover:text-primary transition-colors">Cookie Policy</a>
           </div>
