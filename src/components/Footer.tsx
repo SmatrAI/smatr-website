@@ -15,7 +15,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="mailto:hello@smatr.ai" 
+                href="mailto:smatr@smatr.in" 
                 className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center text-muted hover:text-primary hover:border-primary transition-all duration-300 hover:scale-110"
                 aria-label="Email"
               >
@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
           <div className="flex space-x-6 text-sm font-inter">
             <a href="/privacy" className="text-muted hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="/terms" className="text-muted hover:text-primary transition-colors">Terms and Conditions</a>
+            <a href="/termsandconditions" className="text-muted hover:text-primary transition-colors">TermsAndConditions</a>
             <a href="#cookies" className="text-muted hover:text-primary transition-colors">Cookie Policy</a>
           </div>
         </div>
