@@ -1,22 +1,4 @@
 import React from "react";
-import { ArrowLeft } from "lucide-react";
-import { Link } from "react-router-dom";
-
-const PrivacyPolicy = () => {
-  return (
-    <div className="min-h-screen bg-background">
-      {/* Header */}
-      <div className="border-b border-gray-200 bg-white">
-        <div className="container mx-auto px-6 py-4">
-          <Link 
-            to="/" 
-            className="inline-flex items-center space-x-2 text-muted hover:text-primary transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            <span className="font-inter">Back to Home</span>
-          </Link>
-        </div>
-      </div>
 
 
 /**
