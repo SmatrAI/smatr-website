@@ -78,8 +78,21 @@ const PrivacyPolicy = () => {
                 <li>Marketing partners</li>
               </ul>
             </div>
-          </section>
+          
 
+            <div className="mb-6">
+              <h3 className="text-xl font-urbanist font-medium text-foreground mb-3">
+                d. Personal Communications
+              </h3>
+              <p className="privacy-communications text-foreground font-inter leading-relaxed">
+                We may collect information from your communications with us or within the Services, such as
+                emails, in-app messages, support requests, or other interactions. This may include the content
+                of the communication as well as related metadata (such as date, time, and method of communication).
+              </p>
+            </div>
+
+          </section>
+            
           <section className="mb-8">
             <h2 className="text-2xl font-urbanist font-semibold text-primary mb-4">
               2. How We Use Your Information
